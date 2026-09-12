@@ -1,7 +1,8 @@
+n = int(input("Enter a number: "))
 
-year = 2024
+factorial = 1
 
-if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
-    print("Leap year")
-else:
-    print("Not a leap year")
+for i in range(1, n + 1):
+    factorial *= i
+
+print("Factorial =", factorial)
